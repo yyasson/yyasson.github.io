@@ -4,151 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7397e27609.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
-    <title>Portafolio dinamico Yeison Sierra</title>
+    <link rel="stylesheet" href="grid.css">
+    <title>MAIN</title>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <div class="logo">
-                <h1>Yeison Sierra </h1>
-                <p>Fotografo</p>
-            </div>
-            <form action="">
-                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-            </form>
-            <div class="categorias" id="categorias">
-                <a href="#" class="activo">Todos</a>
-                <a href="#">Naturaleza</a>
-                <a href="#">Ciudades</a>
-                <a href="#">Personas</a>
-                <a href="#">Animales</a>
-
-            </div>
-        </header>
-        <section class="grid" id="grid">
-            <div class="item"
-                 data-categoria="animales" 
-                 data-etiquetas="animales arboles verde"
-                 data-descripcion= "1.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/animal1.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="animales" 
-                 data-etiquetas="animales arboles verde"
-                 data-descripcion= "2.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/animal2.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="ciudades"
-                 data-etiquetas="ciudades calles edificios coches"
-                 data-descripcion= "3.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/ciudad1.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="ciudades" 
-                 data-etiquetas="ciudades calles edificios calles "
-                 data-descripcion= "4.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/ciudad2.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="naturaleza" 
-                 data-etiquetas="naturaleza paisaje"
-                 data-descripcion= "5.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/naturaleza1.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="naturaleza" 
-                 data-etiquetas="naturaleza paisaje"
-                 data-descripcion= "6.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/naturaleza2.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="personas" 
-                 data-etiquetas="personas cultura caras gente"
-                 data-descripcion= "7.- estoa es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/personas1.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="personas" 
-                 data-etiquetas="personas cultura caras gente"
-                 data-descripcion= "8.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/personas2.jpg" alt="">
-                </div>
-            </div>
-            <div class="item"
-                 data-categoria="personas" 
-                 data-etiquetas="personas cultura caras gente"
-                 data-descripcion= "9.- esto es"
-                 >
-                <div class="item-contenido">
-                        <img src="img/personas3.jpg" alt="">
-                </div>
-            </div>
-            
-        </section>
-
-        <section class="overlay" id="overlay">
-            <div class="contenedor-img">
-                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-                <img src="" alt="">
-            </div>
-            <p class="descripcion"></p>
-        </section>
-        <footer class="contenedor">
-			<div class="redes-sociales">
-				<div class="contenedor-icono">
-					<a href="https://twitter.com/" target="_blank" class="twitter">
-                        <i class="fab fa-twitter"></i>
-					</a>
-				</div>
-				<div class="contenedor-icono">
-					<a href="https://facebook.com/" target="_blank" class="facebook">
-                        <i class="fab fa-facebook-f"></i>
-					</a>
-				</div>
-				<div class="contenedor-icono">
-					<a href="https://instagram.com/" target="_blank" class="instagram">
-                        <i class="fab fa-instagram"></i>
-					</a>
-				</div>
-			</div>
-			<div class="creado-por">
-				<p>Sitio diseñado por <a href="#">Yeison Sierra</a> - <a href="https://www.instagram.com/copanjade/?hl=es">Copanjade(Yeison Sierra)</a></p>
-			</div>
-		</footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
-    <script src="main.js"> </script>
-    
+    <main class="container">
+        <div class="wrap">
+            <div class="grid nr1"><a href="/pagina-con-fullpage-js-archivos_base/index.html">page-fullpage-js</a></div>
+            <div class="grid nr2"><a href="/texto animado/index.html">texto animado</a></div>
+            <div class="grid nr3"><a href="/carrousel-glider/index.html">carrousel-glider</a></div>
+            <div class="grid nr4"><a href="/primera-pagina-responsive/public.html">pagina4</a></div>
+            <div class="grid nr5"><a href="">pagina5</a></div>
+            <div class="grid nr6"><a href="">pagina6</a></div>
+        </div>
+    </main>
 </body>
 </html>
