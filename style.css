@@ -65,3 +65,33 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%,
     color: #fff;
 
 }
+
+ /*RESPONSIVE*/ 
+
+ @media screen and (max-width: 768px) {
+    .wrap > div {
+        grid-column: 1 / -1;
+    }
+    .wrap a {
+        position: relative;
+        top: 20%;
+    
+        font-size: 45px;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: #fff;
+    
+    }
+    .wrap a:hover {
+        position: relative;
+        top: 10%;
+        font-size: 55px;
+        text-align: center;
+        padding: 20px 20px;
+    
+        color: #fff;
+    
+    }
+     
+ }
