@@ -4,8 +4,9 @@
 }
 
 body {
-    background: rgb(10,6,66);
-    background: linear-gradient(270deg, rgba(10,6,66,1) 0%, rgba(93,93,143,1) 50%, rgba(25,72,131,1) 96%);
+    background-image: linear-gradient(to right bottom, #1751a8, #463573, #3f2043, #27131f, #000000);
+    /*background: rgb(10,6,66);
+    background: linear-gradient(270deg, rgba(10,6,66,1) 0%, rgba(93,93,143,1) 50%, rgba(25,72,131,1) 96%); */
     color: #000;
     font-family: 'Roboto', sans-serif;
 }
@@ -29,42 +30,122 @@ body {
 .wrap > div {
     display: block;
     padding: 20px 0;
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 3px 3px 13px rgba(0,0,0,.25);
-
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%,
+ rgba(121,70,252,0.852061170212766) 100%);
+    
+    box-shadow: 3px 3px 13px rgba(24, 35, 94,.25);
+    
 }
 
 .wrap > div:hover {
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%,
- rgba(121,70,252,0.852061170212766) 100%);
-    box-shadow: 5px 5px 20px rgba(46, 45, 45, 0.5);
+   
+    background: rgba(251, 220, 63,0.852061170212766);
+    box-shadow: 5px 5px 20px rgba(39, 59, 157, 1);
+    border: 1px solid rgb(24, 22, 22);
+    
 }
+
 
 .wrap a {
     position: relative;
     top: 30%;
-
-    font-size: 55px;
+    font-size: 40px;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
     color: #fff;
-
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-
-
 .wrap a:hover {
     position: relative;
     top: 35%;
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     padding: 20px 20px;
+}
 
+.wrap > div a:hover {
+   color: black;
+  
+    
+}
+
+
+
+.header {
+    display: -ms-inline-grid;
     color: #fff;
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 25px auto;
+    
+    text-align:center;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%,
+  rgba(121,70,252,0.852061170212766) 100%);
+   
+   box-shadow: 5px 5px 10px rgba(24, 35, 94,.25);
+}
+.header > header h1 {
+    font-size: 110px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:5px 5px 70px rgba(255, 255, 255, 0.664);
 
 }
+.header > header h3 {
+    font-size: 55px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-shadow:5px 5px 70px rgba(0, 0, 0, 0.664);
+    }
+.header:hover {
+    margin-top: 20px;
+    margin: 25px auto;
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    color: black;
+    font-size: 45px;
+    text-align:center;
+    background: rgba(251, 220, 63,0.852061170212766);
+    border: 1px solid rgb(24, 22, 22);
+    box-shadow: 5px 5px 10px rgba(39, 59, 157, 1);
+}
+.header > header h1, h3:hover { 
+        text-shadow:5px 5px 10px rgba(107, 101, 101, 0.664);
+}
+
+
+.header .cat {
+    position: absolute;
+    top: 5%;
+    right: 65%;
+    font-size: 130px;
+   color: brown;
+   animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+   
+}
+
+.header .cat1 {
+    position: absolute;
+    top: 5%;
+    right:25%;
+    font-size: 130px;
+    color: black;
+}
+
+
+
+.footer {
+    grid-column: 1 / -1;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(24, 35, 94,.25);
+}
+
+
 
  /*RESPONSIVE*/ 
 
@@ -75,12 +156,12 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%,
     .wrap a {
         position: relative;
         top: 20%;
-    
+        
         font-size: 45px;
         text-align: center;
-        padding: 20px 20px;
+        padding: 15px 15px;
         text-decoration: none;
-        color: #fff;
+        color: text linear-gradient(to left, #1751a8, #463573, #3f2043, #27131f, #000000);
     
     }
     .wrap a:hover {
@@ -89,9 +170,23 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%,
         font-size: 55px;
         text-align: center;
         padding: 20px 20px;
-    
+        
         color: #fff;
     
     }
+    .header .cat {
+         position: absolute;
+          top: 5%;
+         right: 75%;
+         font-size: 120px;
+          color: brown;
+    }
+    .header .cat1 {
+        position: absolute;
+         top: 5%;
+        right: 10%;
+        font-size: 120px;
+         color: black;
+   }
      
  }
