@@ -1,0 +1,11 @@
+/*.wrap_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    'symbol logo header header header flag'
+    'aside main-content main-content content content content'
+    'aside main-content main-content content content content';
+    grid-gap: 5px;
+    
+}*/
