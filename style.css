@@ -68,8 +68,7 @@ body {
     position: absolute;
     right: 100px;
     top: 64px;
-    height: 21px;
-    width: auto;   
+    height: 21px;;   
 }
 
 .menu > li {
@@ -277,7 +276,6 @@ body {
     |-----certificate-cards-----|
     |___________________________|--*/
 .card1 {
-    display: inline-block;
     position: absolute;
     width: 203px;
     height: 203px;
@@ -288,7 +286,7 @@ body {
 }
 
 .card2 {
-    display: inline-block;
+   
     position: absolute;
     width: 203px;
     height: 203px;
@@ -298,7 +296,7 @@ body {
     background-color: hsla(0, 0%, 77%, 0.10);
 }
 .card3 {
-    display: inline-block;
+   
     position: absolute;
     width: 203px;
     height: 203px;
@@ -400,13 +398,70 @@ span {
 .part2 {
     position: absolute;
     border: 1px solid white;
+    
     top: 950px;
     width: 1440px;
     height: 1962px;
 }
 
-.part2 .img-meet {
+.img-meet > img {
     position: absolute;
     top: 0px;
-   
+    width: 730px;
+    height: 750px;
+    object-fit: cover;
+    object-position: 0% 20%; 
+
 }
+
+.img-meet > img:hover {
+    position: absolute;
+    top: 0px;
+    width: auto;
+} 
+
+.part2-text {
+    color: white;
+    position: absolute;
+    top: 102px;
+    left: 842px;
+    width: 516px;
+    height: 442px;
+}
+
+.part2-text > h2 {
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Roboto Condensed';
+}
+
+.part2-text > h1 {
+    margin-top: 35px;
+    height: 124px;
+    width: auto;
+    font-size: 48px;
+    text-align: top;
+    line-height: 62px;
+    font-weight: normal;
+    font-family: 'DM Serif Text';
+}
+.part2-text > p {
+    margin-top: 50px;
+    width: 424px;
+    height: 157px;
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.part2-text > h3 {
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
