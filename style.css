@@ -60,7 +60,6 @@ body {
 
 }
 .container-menu {
-
     display: inline-block;
 }
 
@@ -71,7 +70,7 @@ body {
     height: 21px;;   
 }
 .container-menu > a span {
-    visibility: hidden;
+    overflow: hidden;
 }
 
 
@@ -398,6 +397,8 @@ span {
 
 .part2 {
     position: absolute;
+    border: 1px solid white;
+    
     top: 950px;
     width: 1440px;
     height: 1962px;
