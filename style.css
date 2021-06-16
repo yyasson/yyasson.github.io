@@ -60,7 +60,7 @@ body {
 
 }
 .container-menu {
-    background-color: rgba(0, 255, 106, 0.459);
+
     display: inline-block;
 }
 
@@ -70,6 +70,10 @@ body {
     top: 64px;
     height: 21px;;   
 }
+.container-menu > a span {
+    visibility: hidden;
+}
+
 
 .menu > li {
     
@@ -79,9 +83,6 @@ body {
 
 .menu > li a {
     font-family: 'Roboto Condensed';
-    
-   /* margin-right: 91px;*/
-    
     text-decoration: none;
     margin: -2px;
     padding: 65px 45px;
@@ -414,11 +415,6 @@ span {
 
 }
 
-.img-meet > img:hover {
-    position: absolute;
-    top: 0px;
-    width: auto;
-} 
 
 .part2-text {
     color: white;

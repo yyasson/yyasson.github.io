@@ -1,21 +1,9 @@
-/*/.wrap_container {
-    display: grid;
-    grid-template-columns: repeat(12, 91px);
-    /*grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    'symbol logo header header header flag'
-    'aside main-content main-content content content content'
-    'aside main-content main-content content content content';
-    grid-gap: 20px;
-    
-}*/
-
 
 @media  screen and (max-width: 576px) {
     
     :root {
     
-        --small-size: 576px; 
+        --small-size: 570px; 
     
     }
     * {
@@ -66,37 +54,59 @@
 
 
     .menu {
-        visibility: hidden;
         position: absolute;
-        right: 100px;
-        top: 64px;
-        height: 21px; 
+        left: 0px;
+        top: 150px;
+        height: 35px; 
+        z-index: 1000;
+    }
+    .menu:hover {
+        visibility: visible;
     }
 
+    .container-menu > a span {
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        width: 50px;
+        left: 5px;
+        height: auto; 
+        width: auto;
+
+    }
+    
+
     .menu > li {
-        visibility: hidden;
-        display: block;
+        position: relative;
+        display: inline-block;
         list-style: none;
+        width: 90%;
+        height: 100%;
+        margin: 0px;
+        padding: 30px 10px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background-color: hsl(220, 6%, 10%);
     }
 
     .menu > li a {
-        visibility: hidden;
         font-family: 'Roboto Condensed';
-
-        
+        position: relative;
+        display: block;
+        padding: 10px;
         text-decoration: none;
-        margin: -2px;
-        padding: 65px 45px;
+        margin: -15px;
+        padding: 0px 20px;
         color: white;
+        height: auto; 
         width: auto;
-        font-size: 18px;
-    
+        font-size: 28px;
     }
-    .menu >li a:hover {
-        visibility: hidden;
-        background-color: hsla(0, 0%, 77%, 0.15);
+    
+    .menu >li:hover {
+        background-color: hsl(220, 6%, 30%);
         list-style: none;
         transition: 0.8s ease all;
+
     }
 
     /*-- ___________________________ 
@@ -104,21 +114,19 @@
     |-assets:img,icons,bg...etc-|
     |___________________________|--*/
     .flag > img {
-        visibility: hidden;
         display: inline-block;
         position: absolute;
         top: 56px;
-        right: 76px;
+        left: 470px;
         height:38px;
         width: 38px;
     }
 
     .v {
-        visibility: hidden;
         display: inline-block;
         position: absolute;
         top: 96px;
-        right: 92px;
+        left: 485px;
         height: 5px;
         width: 9px;
     }
@@ -127,7 +135,7 @@
         display: inline-block;
         position: absolute;
         top: 96px;
-        right: 70px;  
+        left: 485px;  
         transition: 0.5s ease all;
     }
 
@@ -148,8 +156,9 @@
         left: 0px;
     }
     .kielbasy > img {
+        overflow: scroll;
         width: var(--small-size);
-        height: auto;
+        height: 600px;
     }
 
     .draw-bg1 {
@@ -161,30 +170,35 @@
     }
 
     .draw-bg2 {
+        visibility: hidden;
         position: absolute;
         transform:  rotate(0deg);
-        right: 140px;
-        top: 800px;
-        width: 300px;
-        height: 400px;
+        left: 10px;
+        top: 850px;
+        width: 500px;
+        height: 450px;
     }
 
     .pepper {
-        
+        visibility: hidden;
         position: absolute;
         top: 700px;
-        left: 0px;
+        left: 20px;
     }
 
-    .Main_content {
-        background-color: rgb(0, 0, 0);
-        height: 1250px;
-    }
+  
     /*-- ___________________________ 
     |                           |
     |--------main-card----------|
     |___________________________|--*/
+    
 
+    .Main_content {
+        overflow:hidden;
+        width: var(--small-size);
+        background-color: rgb(0, 0, 0);
+        height: 1250px;
+    }
     .text_card {
         display: block;
         position: relative;
@@ -230,6 +244,69 @@
 
     /*-- ___________________________ 
     |                           |
+    |--------shop-card----------|
+    |___________________________|--*/
+
+
+.shop_card{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    display: inline-block;
+    width: 80px;
+    height: 160px;
+    background-color: white;
+    border-radius: 25px 0px 25px 0px;
+}
+.shop_card:hover {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    display: block;
+    width: 80px;
+    height: 160px;
+    background-color: white;
+    border-radius: 25px 0px 25px 0px;
+}
+
+.shop_card .sklep {
+    position: relative;
+    width: 80px;
+    height: 60px;
+    margin-top: 100px;
+    display: block;
+    background-color: #FF0008;
+    border-radius: 25px 0px 25px 0px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto Condensed';
+    padding: 12.5px 11px;
+    color: white;
+}
+
+.sklep:hover{
+    background-color: hsl(358, 100%, 60%);
+    padding: 12px 10px;
+    font-size: 17px;
+    border: 1px solid black;
+}
+
+.icon-boton {
+    position: inherit;
+    text-align: center;
+    top: 30%;
+    left: 25%;
+}
+.icon-boton:hover {
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    transition: 0.7s ease all;
+}
+
+
+    /*-- ___________________________ 
+    |                           |
     |-----certificate-cards-----|
     |___________________________|--*/
 .card1 {
@@ -241,6 +318,7 @@
     left: 5%;
     border-radius: 25px 0px 25px 0px;
     background-color: hsla(0, 0%, 77%, 0.10);
+    
 }
 
 .card2 {
@@ -249,7 +327,7 @@
     width: 25%;
     height: 203px;
     top: 761px;
-    left: 35%;
+    left: 37.5%;
     border-radius: 25px 0px 25px 0px;
     background-color: hsla(0, 0%, 77%, 0.10);
 }
@@ -259,7 +337,7 @@
     width: 25%;
     height: 203px;
     top: 761px;
-    left: 65%;
+    left: 70%;
     border-radius: 25px 0px 25px 0px;
     background-color: hsla(0, 0%, 77%, 0.10);
 }
@@ -281,7 +359,7 @@
     width: 25%;
     height: 203px;
     top: 984px;
-    left: 35%;
+    left: 37.5%;
     border-radius: 25px 0px 25px 0px;
     background-color: hsla(0, 0%, 77%, 0.10);
 }
@@ -292,7 +370,7 @@
     width: 25%;
     height: 203px;
     top: 984px;
-    left: 65%;
+    left: 70%;
     border-radius: 25px 0px 25px 0px;
     background-color: hsla(0, 0%, 77%, 0.10);
 }
@@ -353,27 +431,37 @@ span {
 
     .part2 {
         position: absolute;
-        border: 1px solid white;
-        
+      
         top: 1250px;
         width: var(--small-size);
+        max-width: var(--small-size);
         height: 1962px;
+    }
+    .part2 > img {
+        position: absolute;
+        top: 0px;
+        width: 570px;
+        height: 500px;
+
     }
     
     .img-meet > img {
+       
         position: absolute;
-        top: 0px;
-        width: var(--small-size);
-        height: 600px;
+        top: 500px;
+      
+        width: 570px;
+        height: 500px;
      
     }
+    
     
     
     .part2-text {
         background-color: rgba(20, 17, 17, 0.4);
         color: white;
         position: absolute;
-        top: 102px;
+        top: 10px;
         left: 5%;
         padding: 10px;
         width: 516px;
