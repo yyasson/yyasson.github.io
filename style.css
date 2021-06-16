@@ -71,6 +71,7 @@ body {
 }
 .container-menu > a span {
     overflow: hidden;
+    opacity: 5%;
 }
 
 
